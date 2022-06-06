@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Indian Cricket Team official">
+    <meta name="keywords" content="indaian cricket team,cricket,indian cricket,cricket players,cricket tournaments">
+    <meta name="author" content="BCCI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conatct us | Indian cricket team</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="home.html" class="logo"><img src="./style/static/BCCI_logo.png" height="60" width="60" alt=""></a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav__link hide">
+                <a href="home.html">home</a>
+                <a href="about.html">about</a>
+                <a href="tournament.html">Tournaments</a>
+                <a href="players.html">Players</a>
+                <a href="contact.html">contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Contact Us</h1>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+            <form action="success.html" onsubmit=" return validateForm()" novalidate>
+                <label for="name">Name : </label><br><input type="text" onblur="validate1()" name="name"
+                    id="name"><br><br>
+
+                <span id="error1"></span><br><br>
+
+                <label for="email">Email :</label><br><input type="email" onblur="validate2()" name="email"
+                    id="email"><br><br>
+                <span id="error2"></span><br><br>
+
+                <label for="phone">Phone Number : </label><br><input type="tel" onblur="validate3()" name="phone"
+                    id="phone"><br><br>
+                <span id="error3"></span><br><br>
+
+                <label for="message">Message : </label><br><input type="textarea" onblur="validate4()" name="message"
+                    id="message"><br><br>
+                <span id="error4"></span><br><br>
+
+                <input type="submit" value="submit">
+            </form>
+            </div>
+        </div>
+        <div class="column">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.831460536151!2d72.82357531461982!3d18.938852787166716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e0f0a26a81%3A0x87d6e47e04df3916!2sWankhede%20Stadium!5e0!3m2!1sen!2sin!4v1653983760807!5m2!1sen!2sin"
+                width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row1">
+            <div class="column1">
+                <h3>BCCI</h3>
+                <p>The Board of Control for Cricket in India (BCCI) is the governing body for cricket in India.[7] Its
+                    headquarters is situated at Wankhede stadium in Mumbai, Maharashtra.[8]</p>
+            </div>
+            <div class="column1">
+                <h2>Usefull links</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Matches</a></li>
+                    <li><a href="">Players</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column1">
+                <h2>Team Heads</h2>
+                <ul>
+                    <li>Coach : Rahul Dravid</li>
+                    <li>Captain : Rohit Sharma</li>
+                    <li>Vice Captain : KL Rahul</li>
+                </ul>
+            </div>
+            <div class="column1">
+                <h2>Rankings</h2>
+                <ul>
+                    <li>India</li>
+                    <li>Australia</li>
+                    <li>South Africa</li>
+                    <li>England</li>
+                    <li>Pakistan</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./script/main.js"></script>
+
+</body>
+
+</html>
