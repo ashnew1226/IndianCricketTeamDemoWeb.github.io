@@ -1,30 +1,11 @@
-$(document).ready(function(){
-    $('.next').on('click',function(){
-        var currentImg=$('.active');
-        var nextImg=currentImg.next();
-        if (nextImg.length) {
-           currentImg.removeClass('active').css('z-index',-10);
-           nextImg.addClass('active').css('z-index',10); 
 
-        }
-    });
-    $('.prev').on('click',function(){
-        var currentImg=$('.active');
-        var prevImg=currentImg.prev();
-        if (prevImg.length) {
-           currentImg.removeClass('active').css('z-index',-10);
-           prevImg.addClass('active').css('z-index',10); 
-           
-        }
-    });
-});
 
-const hamburger = document.querySelector('.hamburger');
-const navLink = document.querySelector('.nav__link');
+// const hamburger = document.querySelector('.hamburger');
+// const navLink = document.querySelector('.nav__link');
 
-hamburger.addEventListener('click', () => {
-  navLink.classList.toggle('hide');
-});
+// hamburger.addEventListener('click', () => {
+//   navLink.classList.toggle('hide');
+// });
 
 //Tournaments page slide show
 
@@ -44,6 +25,7 @@ setInterval(function(){
     image.fadeOut(1000,()=>{
         image.attr('src',imagesArray[i]);
         image.attr('height','400px');
+        image.attr('width','500px');
         image.fadeIn(1000);
     });
 });
@@ -119,8 +101,33 @@ function validate2(){
 
     }
 }
+// about page
 
+$(document).ready(function(){
+    let var1=$("#history").mouseover(function(){
+      var1.html('<h2>The 1983 world cup changes the mindset of indian peoples</h2>');
+    });
+    $("#history").mouseout(function(){
+      $("#history").html('<h1>Tournament History</h1>');
+    });
+    let var2=$('#indteam').mouseover(function(){
+        var2.css('background-color','yellow');
+    });
+    let var3=$('#indteam').mouseout(function(){
+        var3.css('background-color','white');
+    });
+  });
 
+  //home page
+  function imageChange() {
+    var Image_Id = document.getElementById('crickimg');
+    if (Image_Id.src.match("./style/static/downloadteam.jpg")) {
+        Image_Id.src = "./style/static/IndianCricketTeam_Facebook_17112020_1200x800.jpg";
+    }
+    else {
+        Image_Id.src = "./style/static/downloadteam.jpg";
+    }
+}
 function validate3(){
     let myphone=phoneNode.value;
     let regExp =new RegExp("^[0-9]{10}$");
@@ -168,5 +175,48 @@ function validate4(){
         messageNode.style.border=successborder;
         return true;
 
+    }
+}
+
+// let colorArray=["orange","white","green","yellow","pink"];
+// i=0;
+
+// let interval=setInterval(()=>{
+//     document.getElementById('cricketId').style.backgroundColor=colorArray[i];
+//     if(i==colorArray.length)
+//         clearInterval(interval)
+//     else
+//         i++;
+// },1000)
+
+// setTimeout(1000);
+
+
+
+// $(document).ready(function(){
+// let newImgNode=$('#yuvrajimg').mouseover(function(){
+
+//     newImgNode.attr('src','./style/static/yuvrajnew.jpg');
+// });
+
+// });
+// $(document).ready(function() {
+//     let yuvipa=$("#yuvrajimg");
+//     yuvipa.mouseover(function() {
+//         console.log(yuvipa);
+//         // Change src attribute of image
+//         $("#yuvrajimg").attr("src", "./style/static/yuvrajnew.jpg");
+//       });
+//   });
+
+// players page script
+
+function imagefun() {
+    var Image_Id = document.getElementById('getImage');
+    if (Image_Id.src.match("./style/static/players/yuvi.jpg")) {
+        Image_Id.src = "./style/static/players/yuvrajnew.jpg";
+    }
+    else {
+        Image_Id.src = "./style/static/players/yuvi.jpg";
     }
 }

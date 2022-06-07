@@ -70,6 +70,7 @@ nav a {
 
 .nav__link a:hover {
   background-color: rgb(128, 180, 240);
+  color: yellow;
 }
 
 .hide {
@@ -287,7 +288,8 @@ details p{
 }
 
 form{
-  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
   border: 2px solid green;
   padding: 10px;
   background-color: #B3E3EE;
@@ -303,7 +305,7 @@ background-color: #0d6efd;
 color: white;
 }
 form input{
-  width: 300px;
+  width: 250px;
 }
 .margins{
   margin-top: 40px;
@@ -407,3 +409,33 @@ hr.new5 {
 form>span{
   color: red;
 }
+#myhero{
+  background-image:
+    linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    opacity: 0.9;
+    z-index: -1;
+}
+.columnz img:hover{
+  transform: scale(1.05); 
+
+}
+#formrg{
+  margin-top: 80px;
+}
+article h1{
+  font-size: large;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
+  }
+  .sizeh{
+    font-size: 28px;
+  }
+  .clsframe{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
